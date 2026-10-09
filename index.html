@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ismoiljon Polatov — Portfolio</title>
+    <meta name="description" content="Ismoiljon Polatov — Frontend Web Dasturchi. Shaxsiy portfolio veb-sayti. HTML, CSS, JavaScript.">
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header / Navbar -->
+    <header class="header" id="header">
+        <div class="container nav-container">
+            <a href="#hero" class="logo">
+                <span class="logo-bold">ISMOILJON</span>
+            </a>
+
+            <nav class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li><a href="#hero" class="nav-link active">Asosiy</a></li>
+                    <li><a href="#about" class="nav-link">Men haqimda</a></li>
+                    <li><a href="#skills" class="nav-link">Ko'nikmalar</a></li>
+                    <li><a href="#projects" class="nav-link">Loyihalar</a></li>
+                    <li><a href="#achievements" class="nav-link">Yutuqlar</a></li>
+                    <li><a href="#contact" class="nav-link">Aloqa</a></li>
+                </ul>
+            </nav>
+
+            <div class="nav-actions">
+                <a href="#contact" class="btn btn-outline nav-btn">Bog'lanish</a>
+                <button class="menu-toggle" id="menu-toggle" aria-label="Menyuni ochish">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" id="hero">
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <div class="hero-badge">
+                        <span class="badge-dot"></span> Frontend Web Dasturchi
+                    </div>
+                    <h1 class="hero-title">
+                        Salom, men <br>
+                        <span class="text-highlight">Ismoiljon Polatov</span>
+                    </h1>
+                    <p class="hero-subtitle">
+                        HTML, CSS va JavaScript bo'yicha yosh dasturchi. Zamonaviy, qulay va tez ishlovchi veb-saytlar yarataman.
+                    </p>
+                    <blockquote class="hero-motto">
+                        “Men o‘zimni har kuni yaxshilayapman, va bu mening eng katta yutug‘im.”
+                    </blockquote>
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-primary">Loyihalarim</a>
+                        <a href="#contact" class="btn btn-outline">Bog'lanish</a>
+                    </div>
+                    <div class="hero-socials">
+                        <a href="https://t.me/ismoiljon_polatov" target="_blank" rel="noopener noreferrer" class="social-link" title="Telegram">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69a.2.2 0 00-.05-.18c-.06-.05-.14-.03-.21-.02-.09.02-1.49.95-4.22 2.79-.4.27-.76.41-1.08.4-.36-.01-1.04-.2-1.55-.37-.63-.2-1.12-.31-1.08-.66.02-.18.27-.37.75-.56 2.95-1.28 4.92-2.13 5.92-2.54 2.81-1.17 3.4-.1.38.25z"/>
+                            </svg>
+                            <span>Telegram</span>
+                        </a>
+                        <a href="https://instagram.com/ismoiljon_polatov" target="_blank" rel="noopener noreferrer" class="social-link" title="Instagram">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                            </svg>
+                            <span>Instagram</span>
+                        </a>
+                        <a href="https://github.com/ismoiljon952" target="_blank" rel="noopener noreferrer" class="social-link" title="GitHub">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/>
+                            </svg>
+                            <span>GitHub</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="hero-image-wrapper">
+                    <div class="profile-card">
+                        <div class="profile-avatar-frame">
+                            <img src="images/profile.jpg" alt="Ismoiljon Polatov" class="profile-avatar">
+                        </div>
+                        <div class="profile-info-pill">
+                            <span class="status-indicator"></span>
+                            <div>
+                                <strong>Ismoiljon Polatov</strong>
+                                <small>Xiva, O'zbekiston</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="section about" id="about">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">BIO</span>
+                    <h2 class="section-title">Men haqimda</h2>
+                </div>
+
+                <div class="about-grid">
+                    <div class="about-text-card">
+                        <p class="lead-text">
+                            Salom! Men <strong>Ismoiljon Polatov</strong>, 16 yoshdaman va Xiva shahridagi 11-son maktabning 10-sinf o'quvchisiman.
+                        </p>
+                        <p>
+                            Hozirda ITXiva o'quv markazida veb-dasturlash sohasini chuqur o'rganmoqdaman. HTML5, CSS3 va zamonaviy JavaScript yordamida toza kodli, chiroyli va qulay veb-saytlar yaratish bo'yicha amaliy tajribaga egaman.
+                        </p>
+                        <p>
+                            Dasturlash bilan bir qatorda yoshligimdan sport, ayniqsa futbol bilan jiddiy shug'ullanganman. Ukrainada 3.5 yil yashab, sport musobaqalarida faxrli o'rinlarni egallaganman va bu menga tirishqoqlik hamda jamoaviy intizomni o'rgatgan.
+                        </p>
+                        <p>
+                            Mening asosiy maqsadim — zamonaviy texnologiyalarni mukammal o'rganib, insonlar hayotini osonlashtiruvchi sifatli raqamli loyihalarni hayotga tatbiq etishdir.
+                        </p>
+
+                        <div class="about-quick-facts">
+                            <div class="fact-item">
+                                <span class="fact-label">Yoshim:</span>
+                                <span class="fact-value">16 yosh</span>
+                            </div>
+                            <div class="fact-item">
+                                <span class="fact-label">Ta'lim:</span>
+                                <span class="fact-value">ITXiva & 11-maktab</span>
+                            </div>
+                            <div class="fact-item">
+                                <span class="fact-label">Manzil:</span>
+                                <span class="fact-value">Xiva, Qosimobod</span>
+                            </div>
+                            <div class="fact-item">
+                                <span class="fact-label">Status:</span>
+                                <span class="fact-value">Loyihalarga ochiq</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="about-side-card">
+                        <div class="side-card-inner">
+                            <div class="card-icon">⚡</div>
+                            <h3>Mening maqsadim</h3>
+                            <p>
+                                Har bir yozgan kod qatorim orqali foydalanuvchiga qulaylik yaratish, har kuni yangi bilim o'rganish va o'z sohamning kuchli mutaxassisiga aylanish.
+                            </p>
+                            <div class="stat-boxes">
+                                <div class="stat-box">
+                                    <span class="stat-number">1+</span>
+                                    <span class="stat-text">Yil tajriba</span>
+                                </div>
+                                <div class="stat-box">
+                                    <span class="stat-number">5+</span>
+                                    <span class="stat-text">Loyihalar</span>
+                                </div>
+                                <div class="stat-box">
+                                    <span class="stat-number">100%</span>
+                                    <span class="stat-text">Intilish</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="section skills" id="skills">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">TEXNOLOGIYALAR</span>
+                    <h2 class="section-title">Ko'nikmalar ro'yxati</h2>
+                    <p class="section-desc">Veb-dasturlashda qo'llaydigan asosiy asbob va texnologiyalarim</p>
+                </div>
+
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <div class="skill-header">
+                            <span class="skill-code">&lt;HTML5&gt;</span>
+                            <span class="skill-pct">95%</span>
+                        </div>
+                        <h3>HTML5</h3>
+                        <p>Semantik tuzilma, qulaylik (a11y), formalar va zamonaviy web standartlari.</p>
+                        <div class="skill-bar"><div class="skill-progress" style="width: 95%;"></div></div>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-header">
+                            <span class="skill-code">{CSS3}</span>
+                            <span class="skill-pct">90%</span>
+                        </div>
+                        <h3>CSS3 & Dizayn</h3>
+                        <p>Flexbox, CSS Grid, animatsiyalar, 2-rangli minimalist dizayn va toza stillar.</p>
+                        <div class="skill-bar"><div class="skill-progress" style="width: 90%;"></div></div>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-header">
+                            <span class="skill-code">(JS)</span>
+                            <span class="skill-pct">80%</span>
+                        </div>
+                        <h3>JavaScript (ES6+)</h3>
+                        <p>DOM bilan ishlash, hodisalar (Events), dinamik elementlar va mantiqiy funksiyalar.</p>
+                        <div class="skill-bar"><div class="skill-progress" style="width: 80%;"></div></div>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-header">
+                            <span class="skill-code">@media</span>
+                            <span class="skill-pct">95%</span>
+                        </div>
+                        <h3>Responsive Design</h3>
+                        <p>Mobil telefon, planshet va noutbuk ekranlarida saytning mukammal ko'rinishi.</p>
+                        <div class="skill-bar"><div class="skill-progress" style="width: 95%;"></div></div>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-header">
+                            <span class="skill-code">git //</span>
+                            <span class="skill-pct">85%</span>
+                        </div>
+                        <h3>Git & GitHub</h3>
+                        <p>Versiyalar nazorati, repozitoriylar, branchlar yaratish va kodlarni joylash.</p>
+                        <div class="skill-bar"><div class="skill-progress" style="width: 85%;"></div></div>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-header">
+                            <span class="skill-code">▲ Vercel</span>
+                            <span class="skill-pct">90%</span>
+                        </div>
+                        <h3>Deploy & Hosting</h3>
+                        <p>Vercel va GitHub orqali veb-saytlarni internet tarmog'iga jonli joylash.</p>
+                        <div class="skill-bar"><div class="skill-progress" style="width: 90%;"></div></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="section projects" id="projects">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">PORTFOLIO</span>
+                    <h2 class="section-title">Mening loyihalarim</h2>
+                    <p class="section-desc">O'rganish va amaliyot davomida yaratgan saralangan veb-loyihalarim</p>
+                </div>
+
+                <div class="projects-grid">
+                    <!-- Project 1 -->
+                    <article class="project-card">
+                        <div class="project-image-box">
+                            <img src="images/project-universal.png" alt="Universal Xiva Loyihasi" class="project-img">
+                            <div class="project-badge">E-Commerce / Brend</div>
+                        </div>
+                        <div class="project-body">
+                            <h3 class="project-title">Universal Xiva</h3>
+                            <p class="project-desc">
+                                Xiva shahridagi hashamatli lyustra va lampalar brendi uchun ishlab chiqilgan taqdimot va mahsulotlar veb-sayti. Bootstrap va CSS grid uslubida qurilgan.
+                            </p>
+                            <div class="project-tags">
+                                <span class="tag">HTML5</span>
+                                <span class="tag">CSS3</span>
+                                <span class="tag">Bootstrap</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/ismoiljon952" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline">
+                                    GitHub Kod
+                                </a>
+                                <a href="https://github.com/ismoiljon952" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary">
+                                    Ko'rish &rarr;
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 2 -->
+                    <article class="project-card">
+                        <div class="project-image-box project-preview-box">
+                            <div class="clock-preview">
+                                <div class="clock-display" id="demoClock">12:00:00</div>
+                                <div class="clock-sub">Real-Time JavaScript Soat</div>
+                            </div>
+                            <div class="project-badge">Interaktiv Web Ilova</div>
+                        </div>
+                        <div class="project-body">
+                            <h3 class="project-title">Interactive Smart Clock</h3>
+                            <p class="project-desc">
+                                JavaScript yordamida har bir soniyani real vaqt rejimida yangilab turuvchi interaktiv raqamli soat loyihasi. Vaqt, sana va animatsion dizaynga ega.
+                            </p>
+                            <div class="project-tags">
+                                <span class="tag">HTML5</span>
+                                <span class="tag">CSS3</span>
+                                <span class="tag">JavaScript</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/ismoiljon952" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline">
+                                    GitHub Kod
+                                </a>
+                                <a href="https://github.com/ismoiljon952" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary">
+                                    Ko'rish &rarr;
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 3 -->
+                    <article class="project-card">
+                        <div class="project-image-box">
+                            <img src="images/project-portfolio.png" alt="Shaxsiy Portfolio" class="project-img">
+                            <div class="project-badge">Shaxsiy Veb-sayt</div>
+                        </div>
+                        <div class="project-body">
+                            <h3 class="project-title">Personal Portfolio Website</h3>
+                            <p class="project-desc">
+                                Ismoiljon Polatov shaxsiy portfolio veb-sayti. 2 ta asosiy rangdan iborat zamonaviy minimalist dizayn, to'liq responsiv struktura va Vercel platformasida joylangan.
+                            </p>
+                            <div class="project-tags">
+                                <span class="tag">HTML5</span>
+                                <span class="tag">CSS3</span>
+                                <span class="tag">JavaScript</span>
+                                <span class="tag">Vercel</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/ismoiljon952/web-sayti" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline">
+                                    GitHub Repo
+                                </a>
+                                <a href="#hero" class="btn btn-sm btn-primary">
+                                    Jonli Sayt &rarr;
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education & Achievements Section -->
+        <section class="section achievements" id="achievements">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">YUTUQLAR & TA'LIM</span>
+                    <h2 class="section-title">Ta'lim va yutuqlar</h2>
+                    <p class="section-desc">Mening o'qish jarayonim va hayotiy erishgan natijalarim</p>
+                </div>
+
+                <div class="achievements-grid">
+                    <div class="achieve-card achievement-highlight">
+                        <div class="achieve-img-wrap">
+                            <img src="images/achievement.jpg" alt="Ismoiljon Polatov Kuboklar bilan" class="achieve-photo">
+                        </div>
+                        <div class="achieve-content">
+                            <div class="achieve-badge">Sport & Intizom</div>
+                            <h3>Futbol chempionatlari g'olibi</h3>
+                            <p>
+                                Ukrainada 3.5 yil yashagan davrimda futbol sport turiga qatnashib, shahar va viloyat musobaqalarida faxrli 3-o'rin va esdalik kuboklarini qo'lga kiritganman.
+                            </p>
+                            <p class="text-dimmed">
+                                Ushbu yutuqlarim mahalliy gazeta va matbuotda chop etilgan. Sport menga qat'iyat, sabr-toqat va jamoada ishlash ruhini singdirdi.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="achieve-timeline-card">
+                        <h3 class="timeline-heading">O'qish va Tajriba Yillari</h3>
+                        
+                        <div class="timeline">
+                            <div class="timeline-item">
+                                <div class="timeline-marker"></div>
+                                <div class="timeline-content">
+                                    <span class="timeline-year">2025 - Hozirgi vaqt</span>
+                                    <h4>ITXiva — Frontend Web Dasturlash</h4>
+                                    <p>Zamonaviy veb-texnologiyalar: HTML, CSS, JavaScript, Git & GitHub, va Vercel orqali deploy qilish bo'yicha amaliy ta'lim.</p>
+                                </div>
+                            </div>
+
+                            <div class="timeline-item">
+                                <div class="timeline-marker"></div>
+                                <div class="timeline-content">
+                                    <span class="timeline-year">2016 - Hozirgacha</span>
+                                    <h4>11-sonli umumiy o'rta ta'lim maktabi</h4>
+                                    <p>Xiva shahri maktabida 10-sinf o'quvchisi. Aniq fanlar va axborot texnologiyalariga qiziqish.</p>
+                                </div>
+                            </div>
+
+                            <div class="timeline-item">
+                                <div class="timeline-marker"></div>
+                                <div class="timeline-content">
+                                    <span class="timeline-year">2018 - 2022</span>
+                                    <h4>Ukrainada sport va futbol tajribasi</h4>
+                                    <p>Yoshlar futbol ligasida faol ishtirok, jamoaviy g'alabalar va sovrinli o'rinlar.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="section contact" id="contact">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">ALOQA</span>
+                    <h2 class="section-title">Men bilan bog'lanish</h2>
+                    <p class="section-desc">Savollaringiz, takliflaringiz yoki hamkorlik uchun bemalol yozishingiz mumkin</p>
+                </div>
+
+                <div class="contact-grid">
+                    <div class="contact-info-panel">
+                        <h3>Kontakt ma'lumotlari</h3>
+                        <p class="contact-intro">
+                            Quyidagi tugmalar orqali to'g'ridan-to'g'ri mening profilimga o'tishingiz yoki qo'ng'iroq qilishingiz mumkin:
+                        </p>
+
+                        <div class="contact-cards-list">
+                            <!-- Uy Manzili -->
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+                                    </svg>
+                                </div>
+                                <div class="contact-details">
+                                    <span class="contact-label">Uy manzili</span>
+                                    <span class="contact-value" id="addressText">Xiva shahri, Qosimobod, Durdona mahallasi</span>
+                                </div>
+                                <button class="btn-copy" onclick="copyText('Xiva shahri, Qosimobod, Durdona mahallasi', 'Manzil')" title="Nusxalash">
+                                    Nusxa
+                                </button>
+                            </div>
+
+                            <!-- Telefon -->
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+                                    </svg>
+                                </div>
+                                <div class="contact-details">
+                                    <span class="contact-label">Telefon</span>
+                                    <a href="tel:+998900783037" class="contact-link">+998 90 078 30 37</a>
+                                </div>
+                                <button class="btn-copy" onclick="copyText('+998900783037', 'Telefon raqam')" title="Nusxalash">
+                                    Nusxa
+                                </button>
+                            </div>
+
+                            <!-- Email -->
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                                    </svg>
+                                </div>
+                                <div class="contact-details">
+                                    <span class="contact-label">Elektron pochta</span>
+                                    <a href="mailto:ismoiljonpulatov4@gmail.com" class="contact-link">ismoiljonpulatov4@gmail.com</a>
+                                </div>
+                                <button class="btn-copy" onclick="copyText('ismoiljonpulatov4@gmail.com', 'Email')" title="Nusxalash">
+                                    Nusxa
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Ijtimoiy tarmoqlar qnopkalari (Telegram, Instagram, GitHub) -->
+                        <h4 class="social-box-heading">Ijtimoiy Tarmoqlar Qnopkalari</h4>
+                        <div class="contact-buttons-group">
+                            <a href="https://t.me/ismoiljon_polatov" target="_blank" rel="noopener noreferrer" class="btn btn-social">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69a.2.2 0 00-.05-.18c-.06-.05-.14-.03-.21-.02-.09.02-1.49.95-4.22 2.79-.4.27-.76.41-1.08.4-.36-.01-1.04-.2-1.55-.37-.63-.2-1.12-.31-1.08-.66.02-.18.27-.37.75-.56 2.95-1.28 4.92-2.13 5.92-2.54 2.81-1.17 3.4-.1.38.25z"/>
+                                </svg>
+                                <span>Telegram Ochish</span>
+                            </a>
+
+                            <a href="https://instagram.com/ismoiljon_polatov" target="_blank" rel="noopener noreferrer" class="btn btn-social">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                                </svg>
+                                <span>Instagram Ochish</span>
+                            </a>
+
+                            <a href="https://github.com/ismoiljon952" target="_blank" rel="noopener noreferrer" class="btn btn-social">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/>
+                                </svg>
+                                <span>GitHub Ochish</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Xabar Yozish Shakli -->
+                    <div class="contact-form-card">
+                        <h3>Menga xabar yuborish</h3>
+                        <p>Xabaringizni yozib qoldiring, tez orada javob beraman.</p>
+
+                        <form id="contactForm" onsubmit="handleMessageSubmit(event)">
+                            <div class="form-group">
+                                <label for="senderName">Ismingiz</label>
+                                <input type="text" id="senderName" class="form-input" placeholder="Ismingizni kiriting" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="senderContact">Telegram yoki Telefoningiz</label>
+                                <input type="text" id="senderContact" class="form-input" placeholder="@username yoki +998..." required>
+                            </div>
+                            <div class="form-group">
+                                <label for="senderMessage">Xabar matni</label>
+                                <textarea id="senderMessage" class="form-input" rows="4" placeholder="Xabaringizni yozing..." required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-block" id="submitBtn">
+                                Xabarni Yuborish
+                            </button>
+                            <div id="formStatus" class="form-status"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-left">
+                <span class="logo-bold">ISMOILJON POLATOV</span>
+                <p>&copy; 2026 Barcha huquqlar himoyalangan. ITXiva Portfolio.</p>
+            </div>
+            <div class="footer-right">
+                <a href="#hero" class="back-to-top">Yuqoriga &uarr;</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Toast Notification for Copy -->
+    <div id="toast" class="toast">Nusxalandi!</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
